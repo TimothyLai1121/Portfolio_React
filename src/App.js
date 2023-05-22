@@ -1,6 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+// import Contact with @formspree/react //
+import Contact from './pages/Contact';
+
+// import Portfolio //
+
+// import boostrap css //
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// trying out index.js // 
+
+
 function App() {
   return (
     <div className="App">
