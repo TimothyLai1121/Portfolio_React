@@ -1,3 +1,5 @@
+// npm i react-modal-image //
+
 import React from 'react';
 import ModalImage from 'react-modal-image';
 import resumeImage from '../assets/Resume.jpg';
