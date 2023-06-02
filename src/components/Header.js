@@ -5,7 +5,7 @@ import '../styles/header.css';
 const Header = () => {
   return (
     <header className="header">
-      <h1 className="title">Another Portfolio but with React</h1>
+      <h1 className="title">React.Js</h1>
       <Navigation />
     </header>
   );

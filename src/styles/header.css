@@ -1,18 +1,27 @@
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+:root {
+  --color-background: #ECF8F9;
+  --color-primary: #068DA9;
+  --color-secondary: #7E1717;
+  --color-accent: #E55807;
+  --font-family-cursive: 'Caveat', cursive;
 }
 
-h1 {
-  font-size: 24px;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.0555em;
-  color: #ff7473;
+
+.header {
+  background-color: var(--color-background);
+  padding: 20px;
+  text-align: center;
 }
+
+.title {
+  color: var(--color-primary);
+  font-family: var(--font-family-cursive);
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.title:hover {
+  color: var(--color-accent);
+}
+

@@ -8,12 +8,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background-size: cover;
+  background-color: #9C27B0; /* You can change the color based on your preference */
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+  background: inherit;
+  z-index: -1;
+  transform: rotate(30deg);
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(255,255,255,.05) 2%, transparent 0),
+    radial-gradient(circle at 40% 20%, rgba(255,255,255,.02) 3%, transparent 0) 30px,
+    radial-gradient(circle at 70% 50%, rgba(255,255,255,.04) 3%, transparent 0) 30px,
+    radial-gradient(circle at 90% 60%, rgba(255,255,255,.05) 5%, transparent 0) 30px,
+    linear-gradient(to bottom, rgba(255,255,255,.14), rgba(255,255,255,.06)) no-repeat;
+  background-size: 80px 80px;
+  animation: animate 20s linear infinite;
 }
+
+@keyframes animate {
+  0% {
+    background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: 100px 100px, 30px 30px, -90px 90px, -40px 40px, 0 0;
+  }
+}
+
+
 
 
 /* adding .resume properties */
